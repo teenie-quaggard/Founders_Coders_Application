@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: #eec9d2;
+}
+
+/* Navigation Styling */
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: lowercase;
+    font-size: 9vmax;
+}
+li {
+    list-style-type: none;
+    justify-self: center;
+    align-self: center;
+}
+nav {
+    width: 100%;
+    text-align: center;
+}
+nav a {
+    display: block;
+    padding: 15px 15px;
+    padding-right: 30px;
+}
+nav a:hover {
+    color: orangered;
+}
+
+#menu-toggle {
+    display: none;
+}
+#menu-toggle:checked ~ .menu {
+    position: fixed;
+    left: 0;
+}
+.button{
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    margin-right: 3vh;
+    margin-bottom: 1vh;
+    z-index: 100;
+}
+#button-line {
+    display: fixed;
+    width: 40px;
+    height: 6px;
+    background-color: black;
+    margin: 7px 0;
+    transition: 0.5s;
+}
+
+/* Button animation */ 
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 8px) ;
+}
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/* Button Animation end*/
+
+.menu {
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #f9f4f4;
+    left: -29vw;
+    transition: all .4s ease-in-out;
+    z-index: 8;
+}
+.nav-grid-container {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: minmax(100%, 40vw);
+    grid-template-rows: repeat(5, minmax(20vh, 100%)); 
+    grid-template-areas:
+        "top-l"
+        "who"
+        "why"
+        "what"
+        "links";
+}
+#top-link {
+    grid-area: top-l;
+}
+#who-link {
+    grid-area: who;
+}
+#why-link {
+    grid-area: why;
+}
+#what-link {
+    grid-area: what;
+}
+#links-link {
+    grid-area: links;
+}
+#menu-button {
+    grid-area: m;
+}
+/*Navigation styling end*/
+
+/* Border styling */
+html:before,html:after,body:before,body:after{
+    content:"";
+    background:#f9f4f4;
+    position:fixed;
+    display:block;
+    z-index:4;
+}
+html:before{
+    height:1vw;
+    left:0;
+    right:0;
+    top:0;
+}
+html:after{
+    width:1vw;
+    top:0;
+    right:0;
+    bottom:0;
+}
+body:before{
+    height:1vw;
+    right:0;
+    bottom:0;
+    left:0;
+}
+body:after{
+    width:1vw;
+    top:0;
+    bottom:0;
+    left:0;
+}
+/* Border Styling end */
+
+/* Header styling, page 1 */
+.header-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 100px 1fr;
+    grid-template-areas: 
+        "hi . ."
+        "iam . ."
+        "kris kris kris";
+    height: 90vh;
+    width: 90vw;
+}
+#hi {
+    grid-area: hi;
+    justify-self: left;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    text-transform: uppercase;
+    font-size: 20vh;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 4px;
+    z-index: 6;
+    border-bottom: dashed;
+    
+}
+#name {
+    grid-area: iam;
+    justify-self: center;
+    margin-left: 4vw;
+    margin-top: 3vh;
+    font-family: sans-serif;
+}
+#name-image {
+    grid-area: kris;
+    max-width: 80vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    transform: rotate(10deg);
+    transform: scale(1.5, 1.378);
+}
