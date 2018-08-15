@@ -152,49 +152,66 @@ body:after{
 /* Border Styling end */
 
 /* Header styling, page 1 */
-.header-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 100px 1fr;
-    grid-template-areas: 
-        "hi . ."
-        "iam . ."
-        "kris kris kris";
-    height: 90vh;
-    width: 90vw;
+.header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../Images/name-image.png");
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+    background-size: 60%;
 }
-#hi {
-    grid-area: hi;
-    margin-top: 4vh;
-    margin-left: 4vw;
+.htext{
+    margin-right: 2vw;
+    margin-left: 2vw;
+    z-index: -1
+}
+#hello {
+    margin-top: 5vh;
+    padding-left: 4vw;
     text-transform: uppercase;
-    font-size: 20vh;
+    font-size: 15vh;
     font-family: 'Heebo', sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 8px;
     z-index: 6;
     border-bottom: dashed;
+    border-width: thick;
     
 }
 #name {
-    grid-area: iam;
-    justify-self: center;
-    margin-left: 4vw;
     margin-top: 5vh;
-    font-size: 5vh;
-    font-family: sans-serif;
+    padding-left: 4vw;
+    font-size: 4vh;
+    font-family: 'Heebo', sans-serif;
     letter-spacing: 1.5vw;
     text-transform: lowercase;
     font-weight: bold;
     color: black;
+    
 }
-#name-image {
-    grid-area: kris;
-    max-width: 80vw;
-    max-height: 80vh;
-    width: auto;
+#hidden-for-screenreaders{
+    text-indent: -10000px;
+}
+#header-image {
+    height: 50em;
+    margin: 0 10%;
+}
+#circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 50%;
     height: auto;
-    justify-self: center;
-    align-self: center;
-    transform: rotate(10deg);
-    transform: scale(1.5, 1.378);
+    padding-top: 50%;
+    background: white;
+    margin-top: 2vh;
+    margin-left: 20%;
+    z-index: -3;
+}
+
+/* Page 2 */
+#who {
+    text-transform: lowercase;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    font-size: 8vh;
+    margin-left: 35vw;
 }
