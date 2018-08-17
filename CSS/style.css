@@ -248,6 +248,9 @@ body:after{
     transition: 0.1s;
 }
 /* Page 3 */
+.why-logo{
+    margin: 2%;
+}
 #why-q {
     position: absolute;
     color: #f9f4f4;
