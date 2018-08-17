@@ -6,14 +6,14 @@
     <title>Hi I'm Kristina.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Heebo:800|Yantramanav:900|Homemade+Apple|Permanent+Marker|Cedarville+Cursive" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Montserrat|Heebo:800|Yantramanav:900|Permanent+Marker|Cedarville+Cursive" rel="stylesheet">
     <script src="JS/myscript.js"></script>
 </head>
     
 <body>
 <!-- Navigation Button -->
     <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="button">
+        <label for="menu-toggle">
             <div class="button" onclick="menuToggle(this)">
                 <div class="bar1" id="button-line"></div>
                 <div class="bar2" id="button-line"></div>
@@ -25,11 +25,11 @@
 <!-- Navigation Menu -->    
 <nav class="menu" role="navigation">
     <ul class="nav-grid-container">
-        <li id="top-link"><a href="#">Top</a></li>
-        <li id="who-link"><a href="#who-header">Who</a></li>
-        <li id="why-link"><a href="#">Why</a></li>       
-        <li id="what-link"><a href="#">What</a></li>
-        <li id="links-link"><a href="#">Links</a></li>
+        <li id="top-link"><a href="#hello">top</a></li>
+        <li id="who-link"><a href="#portrait">who</a></li>
+        <li id="why-link"><a href="#why-q">why</a></li>  
+        <li id="what-link"><a href="#">what</a></li>
+        <li id="links-link"><a href="#">links</a></li>
     </ul>
 </nav>
     
@@ -48,13 +48,42 @@
 
 <main>
 <!-- Page 2 -->
-    <h2 id="who-header">Who am I ?</h2>
     <picture>
-        <img id="portrait" src="../Images/kristinaJaggardPortrait.png" alt="Collage image of Kristina Jaggard with her forehead and eyes repeating and vertically stacked.">
+        <img id="portrait" src="../Images/kristinaJaggardPortrait.png" alt="Black and white image of Kristina Jaggard giving two peace signs">
     </picture>
+    <p class="text" id="who-text">I am a 29-year-old Malay Filipino with a degree in sculpture. In 2012, I graduated from the Emily Carr University of Art and Design in beautiful British Columbia, Canada.
+    <br>
+    <br>
+    Before moving to London, I lived in Berlin where I worked as the head assistant for an artist named <a href="http://www.andrearosengallery.com/artists/simon-fujiwara">Simon Fujiwara.</a> My job was to research, source and test materials, create artworks and manage the production of large scale exhibitions.
+        <br>
+        <br>
+    After relocating to London, I felt a pull to direct my energy into something that felt more personally meaningful and I moved into the field of social support. For the past two years, I have been working as a tutor for children with disabilities while also facilitating community engagement projects for the <a href="https://www.mencap.org.uk/">disability charity Mencap.</a>
+        <br>
+        <br>
+    In addition to my paid employment, I volunteer at <a href="https://switchboard.lgbt/">Switchboard,</a> the London-based LGBT+ helpline. The helpline is staffed exclusively by LGBT+ individuals who go through a rigorous 6 month training process. We talk about a range of issues including sexual and mental health, and notions surrounding gender and identity.
+    </p>
 
 <!-- Page 3 -->
-   
+    <div class="page3">
+        <h2 class="why-logo" id="why-q">?</h2>
+        <h2 class="why-logo" id="why">why<br> coding</h2>
+    </div>
+    
+
+<!-- Page 4 -->
+    
+    <div class="page4">
+        <p id="why-text">While working at the charity, it was my responsibility to maintain a company blog so that the service users could keep up to date on the types of activities that we had running. 
+        <br>
+        <br>
+        Although the blog was created as a sort of 'community newsletter' for the service users, the styling and accessibility features of the site were so outdated that many of the people I worked with could not navigate the webpage without help. I became interested in finding ways to fix this problem, but wasn't able to with my very limited knowledge of HTML. 
+        <br>
+        <br>
+        The beauty of the world wide web is that it brings people together and spreads information quickly; but, like other public places, the internet needs to be a place that is accessible for many different types of users. I am interested in learning how to code so that can help bridge a gap that seems to be widening faster than it is closing.
+        </p>
+
+    </div>
+    
 </main>    
 </body>
     
