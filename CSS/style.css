@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
     background-color: #eec9d2;
+    font-family: 'Source Sans Pro', sans-serif;
 }
-
-/* Navigation Styling */
+em {
+    font-style: italic;
+}
 a {
     text-decoration: none;
     color: black;
-    font-size: 8vmax;
+    font-size: 7vmax;
+    font-style: italic;
+    font-family: 'Permanent Marker', sans-serif;
 }
+/* Navigation Styling */
 li {
     list-style-type: none;
     justify-self: center;
@@ -30,6 +34,7 @@ nav a {
 }
 nav a:hover {
     color: orangered;
+    transition: 0.1s;
 }
 #menu-toggle {
     display: none;
@@ -43,9 +48,7 @@ nav a:hover {
     position: fixed;
     cursor: pointer;
     margin: 1%;
-    padding-top: 0.3%;
-    padding-right: 0.5%;
-    padding-left: 0.5%;
+    padding: 1%;
     right: 2%;
     top: 6%;
     z-index: 100;
@@ -55,9 +58,10 @@ nav a:hover {
     border-radius: 10px;
     background-color: rgba(249, 244, 244,0.4);
     opacity: 70%;
+    justify-content: center;
 }
 .button:hover{
-    color: white;
+    color: orangered;
 }
 #button-line {
     width: 40px;
@@ -94,11 +98,11 @@ nav a:hover {
     height: 100vh;
     position: fixed;
     background-color: #f9f4f4;
-    top: -0.5vw;
+    top: -1vw;
     left: -29vw;
     transition: all .4s ease-in-out;
     z-index: 70;
-    padding: 3%;
+    margin-bottom: 5%;
 }
 .nav-grid-container {
     display: grid;
@@ -172,66 +176,66 @@ body:after{
 
 /* Header styling, page 1 */
 .header{
-    height: 100vh;
-    width: 100vw;
+    margin: 5% 0% 5% 0%;
+    padding: 5% 20% 10% 10%;
 }
 .htext{
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-left: 7%;
 }
 #hello {
-    margin-top: 5vh;
-    padding-left: 4vw;
-    text-transform: uppercase;
-    font-size: 15vh;
-    font-family: 'Heebo', sans-serif;
-    letter-spacing: 8px;
-    z-index: 60;
-    border-bottom: dashed;
     position: relative;
-    
+    font-family: 'Heebo', sans-serif;
+    font-size: 7em;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 4vw;
+    z-index: 60;
+}
+#hello::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
+  pointer-events: none;
 }
 #mynameis {
-    margin-top: 5vh;
-    padding-left: 4vw;
-    font-size: 4vh;
-    font-family: 'Heebo', sans-serif;
-    letter-spacing: 1.5vw;
-    text-transform: lowercase;
-    font-weight: bold;
-    color: black; 
     position: relative;
+    font-family: 'Heebo', sans-serif;
+    font-size: 4vh;
+    text-transform: lowercase;
+    letter-spacing: 1.5vw;
+    font-weight: bold;
+    border-bottom: thin dashed;
     z-index: 60;
+    padding: 1vh 0 0 0.5vw;
 }
 #name{
-    font-family: 'Permanent Marker', sans-serif;
-    font-size: 11vw;
-    letter-spacing: 2vw;
-    text-align: center;
-    margin-top: 5%;
-    border-bottom: dashed;
-    margin: 2vw;
-    padding-bottom: 10vh;
     position: relative;
+    transform: rotate(-2deg); 
+    font-style: italic;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 15vw;
     z-index: 60;
- 
+    opacity: 0.9;
+    padding-top: 2%;
+    left: -1vw;
+    text-align: right;
+    right: -10;
 }
 /* Page 2 */
 #portrait {
     transform: scaleX(-1);
     position: relative;
     padding-right: 4vw;
-    z-index: 60;
+    z-index: -1;
     width: 90%;
     height: auto;
-    
 }  
 .text {
     position: relative;
     margin-top: 15vh;
-    padding-right: 20%;
-    padding-left: 20%;
-    padding-bottom: 10%;
+    padding: 0% 20% 10% 20%;
     font-family: 'Monserrat', sans-serif;
     font-size: 1em;
     letter-spacing: 0.1em;
@@ -242,6 +246,7 @@ body:after{
 }
 #who-text a {
     font-size: 1.3em;
+    text-transform: capitalize;
 }
 #who-text a:hover {
     color: orangered;
@@ -261,21 +266,70 @@ body:after{
     position: absolute;
     color: black; 
     font-size: 2em;
-    padding-top: 6%;
+    padding-top: 8.7%;
     letter-spacing: 5px;
     left: 21%;
+    font-family: 'Yantramanav', sans-serif;
 }
-
 #why-text{
     float: right;
-    margin-left: 40%;
-    margin-right: 10%;
-    margin-bottom: 15%;
+    margin: 0% 10% 10% 40%;
+    padding-top: 5%; 
     font-size: 1em;
     font-family: 'Monserrat', sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    display: block;
+}
+/* Page 4 */
+
+#what-heading{
+    border-top: thin dashed black;
+    margin: 60% 10% 10% 10%;
+    padding: 10% 10% 0% 10%;
+    text-transform: lowercase;
+    font-family: 'Heebo', sans-serif;
+    font-size: 5em;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 0.8;
+}
+#what-now {
     font-size: 1em;
+    font-family: 'Monserrat', sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 1.5em; 
+    padding: 0% 10% 10% 10%;
+    border-bottom: thin dashed black;
+    margin: 0% 10% 0% 10%;
+}
+
+/* Page 5 Links & Info */
+.page5{
+    margin: 5% 15% 5% 15%;
+    font-family: 'Monserrat', sans-serif;
     letter-spacing: 0.1em;
     line-height: 1.5em;
 }
-
-
+.page5 a{
+    font-size: 2rem;
+}
+.page5 a:hover{
+    color: orangered;
+    transition: 0.1s;
+}
+#info-heading{
+    font-family: 'Yantramanav', sans-serif;
+    text-transform: uppercase;
+    font-size: 5em;
+}
+#links-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 14%;
+    padding: 10%;
+    border: thin dashed;
+    border-radius: 20px;
+    
+}
