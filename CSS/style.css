@@ -235,7 +235,7 @@ body:after{
 .text {
     position: relative;
     margin-top: 15vh;
-    padding: 0% 20% 10% 20%;
+    padding: 5% 20% 10% 20%;
     font-family: 'Monserrat', sans-serif;
     font-size: 1em;
     letter-spacing: 0.1em;
@@ -254,7 +254,7 @@ body:after{
 }
 /* Page 3 */
 .why-logo{
-    margin: 2%;
+    margin: auto;
 }
 #why-q {
     position: absolute;
@@ -306,7 +306,7 @@ body:after{
 
 /* Page 5 Links & Info */
 .page5{
-    margin: 5% 15% 5% 15%;
+    margin: 5% 15% 0% 15%;
     font-family: 'Monserrat', sans-serif;
     letter-spacing: 0.1em;
     line-height: 1.5em;
@@ -323,13 +323,18 @@ body:after{
     text-transform: uppercase;
     font-size: 5em;
 }
+#info-text a {
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+#info-text a:hover {
+    color: orangered;
+    transition: 0.1s;
+}
 #links-table{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 14%;
     padding: 10%;
-    border: thin dashed;
-    border-radius: 20px;
-    
 }
